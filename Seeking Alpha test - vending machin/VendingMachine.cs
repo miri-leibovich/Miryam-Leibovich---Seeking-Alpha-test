@@ -159,7 +159,10 @@ namespace Seeking_Alpha_test___vending_machin
             //While loop as long as the user did not put in all the money.
             while (sum < selectedDrinkPrice)
             {
-
+                if (sum != 0)
+                {
+                    Console.WriteLine("Now you have to pay "+ (selectedDrinkPrice - sum));
+                }
                 //Attempt to convert input to float (The type of coins).
                 try
                 {
